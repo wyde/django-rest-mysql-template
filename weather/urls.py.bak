@@ -1,0 +1,13 @@
+from django.conf.urls import url 
+from rest_framework.urlpatterns import format_suffix_patterns
+from weather import views
+from django.views.generic.base import RedirectView
+
+urlpatterns = [ 
+    url(r'^rainfalls/$', views.RainfallList.as_view()),
+    url(r'^rainfalls/(?P<pk>[0-9]+)/$', views.RainfallDetail.as_view()),
+    url(r'^stations/$', views.RainfallStationList.as_view()),
+    #url(r'^.*$', views.RainfallList.as_view(), name='rainfall_list')
+]
+                                         
+urlpatterns = format_suffix_patterns(urlpatterns)
