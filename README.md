@@ -1,4 +1,4 @@
-This is a template for developing Django REST Framework
+This is a template for developing API using Django REST Framework
 
 ## Installed App
 - [Swagger](https://django-rest-swagger.readthedocs.io/en/latest/)
